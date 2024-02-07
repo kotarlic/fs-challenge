@@ -1,0 +1,40 @@
+@import 'styles/settings.scss';
+
+.c-message {
+  display: flex;
+  flex-direction: column;
+  padding: $space-s;
+
+  &__sender {
+    font-size: $fs-small;
+    padding: $space-xs;
+    margin: $space-xs;
+  }
+
+  &__content {
+    padding: $space-s;
+    border-radius: $space-s;
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    background-color: $white;
+    color: $primary-color;
+    filter: drop-shadow(2px 2px 2px $gray);
+
+    &--by-user {
+      background-color: $primary-color;
+      color: $white;
+      margin-right: $space-m;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__time {
+    font-size: $fs-xsmall;
+    padding: $space-xs;
+  }
+}
