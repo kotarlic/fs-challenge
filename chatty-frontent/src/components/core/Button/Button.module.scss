@@ -1,0 +1,46 @@
+@import 'styles/settings.scss';
+
+.c-button {
+  appearance: button;
+  backface-visibility: hidden;
+  border-radius: $space-s;
+  border-width: 0;
+  cursor: pointer;
+  margin: $space-s $space-s;
+  padding: $space-s $space-m;
+  font-size: $fs-base;
+
+  &--primary {
+    background-color: $primary-color;
+    color: $white;
+  }
+
+  &--secondary {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+
+  &--small {
+    width: 25%;
+  }
+
+  &--medium {
+    width: 50%;
+  }
+
+  &--large {
+    width: 100%;
+  }
+
+  &--icon {
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: $space-m $space-m;
+    border-radius: 50%;
+  }
+}

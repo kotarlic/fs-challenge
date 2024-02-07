@@ -1,0 +1,25 @@
+@import 'styles/settings.scss';
+
+.c-input {
+  padding: $space-s $space-m;
+  margin: $space-s $space-s;
+  display: inline-block;
+
+  border: 1px solid $primary-color;
+  border-radius: $space-xs;
+  box-sizing: border-box;
+
+  resize: vertical;
+
+  &--small {
+    width: 25%;
+  }
+
+  &--medium {
+    width: 50%;
+  }
+
+  &--large {
+    width: 100%;
+  }
+}
