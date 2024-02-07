@@ -1,0 +1,10 @@
+.idea/
+chat-service/.idea
+chat-service/target
+*.iml
+*.iws
+target/
+.sonar/
+.sonarlint/
+
+chatty-frontent

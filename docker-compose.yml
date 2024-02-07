@@ -13,6 +13,25 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: password
     volumes:
       - mongo:/data/db/
+    networks:
+      - chatty
+
+  backend:
+    container_name: backend
+    depends_on:
+      - mongo
+    build: .
+    restart: on-failure
+    ports:
+      - '8080:8080'
+    environment:
+      MONGO_HOST: mongodb
+    networks:
+      - chatty
+
+networks:
+  chatty:
+
 volumes:
   mongo:
     driver: local
