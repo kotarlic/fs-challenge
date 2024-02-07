@@ -7,8 +7,12 @@
   <groupId>io.chatty</groupId>
   <artifactId>chatty</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
   <name>chatty</name>
+  <modules>
+    <module>chat-service</module>
+  </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

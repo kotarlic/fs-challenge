@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: chat-service
+  data:
+    mongodb:
+      authentication-database: admin
+      username: root
+      password: password
+      database: chat
+      host: ${MONGO_HOST:localhost}
+      port: 27017
